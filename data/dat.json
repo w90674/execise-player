@@ -1,0 +1,27 @@
+[
+  {
+    "musicName":"轨迹",
+    "url":"./data/music/轨迹.mp3",
+    "lyric":"./data/lrc/轨迹.txt"
+  },
+  {
+    "musicName":"不该",
+    "url":"./data/music/不该.mp3",
+    "lyric":"./data/lrc/不该.txt"
+  },
+  {
+    "musicName":"晴天",
+    "url":"./data/music/晴天.mp3",
+    "lyric":"./data/lrc/晴天.txt"
+  },
+  {
+    "musicName":"断了的弦",
+    "url":"./data/music/断了的弦.mp3",
+    "lyric":"./data/lrc/断了的弦.txt"
+  },
+  {
+    "musicName":"园游会",
+    "url":"./data/music/园游会.mp3",
+    "lyric":"./data/lrc/园游会.txt"
+  }
+]
