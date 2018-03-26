@@ -3,128 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>轨迹-周杰伦</title>
-    <style type="text/css">
-        div,ul,li{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        ul{
-            list-style: none;
-        }
-        .main{
-            min-width: 500px;
-            width: 500px;
-            margin: 30px auto;
-            position: relative;
-            overflow: hidden;
-        }
-        .musicList{
-            float: left;
-            margin: 13px 0;
-            height: 100px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        .musicList li{
-            width: 70px;
-            height: 20px;
-            line-height: 20px;
-            font-size: 12px;
-            text-align: center;
-            border-radius: 10px 0 0 10px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            background-color: #ccc;
-            border-bottom: 1px solid #999;
-            box-sizing: border-box;
-        }
-        .main .musicList li:hover{
-            cursor: pointer;
-            background-color: plum;
-        }
-        .musicList .select{
-            color: #2717e6;
-            font-weight: bold;
-            background-color: #999;
-        }
-        .music{
-            min-width: 300px;
-            height: 105px;
-            margin: 10px auto;
-            border: 1px solid #ccc;
-            overflow: hidden;
-            float: left;
-            position: relative;
-        }
-        .music>div{
-            position: relative;
-            padding-bottom: 3px;
-            z-index: 1;
-            background-color: #333;
-        }
-        .music audio{
-            width: 300px;
-        }
-        .lyrics{
-            width: 100%;
-            box-sizing: border-box;
-            position: absolute;
-            z-index: 0;
-            top: 60px;
-        }
-        .lyrics li {
-            box-sizing: border-box;
-            width: 100%;
-            height: 15px;
-            line-height: 15px;
-            text-align: center;
-            font-size: 14px;
-            margin: 5px;
-        }
-        .music .coverPage{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            position: absolute;
-            bottom:-15px;
-            left: 10px;
-            background:url("./img/coverPage.png") no-repeat;
-            background-size: contain;
-        }
-        .rotation{
-            -webkit-animation: rotations 5s  linear infinite;
-        }
-        .paused {
-            -webkit-animation-play-state: paused;
-        }
-        @-webkit-keyframes rotations {
-            100%{
-               transform: rotate(360deg);
-        }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 <div class="main">
     <ul class="musicList">
-
+        <!-- 歌单列表 -->
     </ul>
     <div class="music">
         <div> <audio src="data/music/轨迹.mp3" controls></audio></div>
         <ul class="lyrics">
-
+            <!-- 歌词列表 -->
         </ul>
         <h3 class="coverPage">
+            <!-- 封面 -->
         </h3>
     </div>
 </div>
-<script src="../jq/jquery-min.js"></script>
+<script
+        src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
 <script src="./js/_lyric.js"></script>
 
 <!-- 网页背景 -->
-<script type="text/javascript"color="204,204,204"opacity="0.5"count="99"src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script type="text/javascript"color="204,204,204"opacity="0.65"count="99"src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 <!-- 歌单选择 -->
 <script type="text/javascript">
     //歌单填充&歌单歌词信息获取：
